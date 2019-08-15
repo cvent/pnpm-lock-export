@@ -1,0 +1,26 @@
+{
+  "name": "pnpm-lock-export",
+  "version": "0.0.1",
+  "description": "A utility for converting pnpm-lock.yaml to package-lock.json",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "files": [
+    "lib/"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "tslint -c tslint.json src/**/*.ts test/**/*.ts"
+  },
+  "author": "Emily Curry <emily@curry.sh>",
+  "license": "MIT",
+  "dependencies": {
+    "@pnpm/lockfile-file": "^1.1.2"
+  },
+  "devDependencies": {
+    "@pnpm/lockfile-types": "^1.1.0",
+    "tslint": "^5.18.0",
+    "tslint-config-standard": "^8.0.1",
+    "tslint-eslint-rules": "^5.4.0",
+    "typescript": "^3.5.3"
+  }
+}
