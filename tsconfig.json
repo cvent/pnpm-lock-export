@@ -11,9 +11,11 @@
     "sourceMap": false,
     "strict": true,
     "suppressImplicitAnyIndexErrors": true,
-    "target": "es2017"
+    "target": "es2017",
+    "outDir": "lib"
   },
   "atom": {
     "rewriteTsconfig": true
-  }
+  },
+  "include": ["src/**/*", "typings/**/*"]
 }

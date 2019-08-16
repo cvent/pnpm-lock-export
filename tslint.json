@@ -17,13 +17,14 @@
     "no-var-requires": true,
     "no-require-imports": false,
     "no-reference": false,
-    "space-before-function-paren": [true, "always"],
+    "space-before-function-paren": [false, "always"],
     "object-literal-sort-keys": [true, "ignore-case"],
     "ordered-imports": true,
     "trailing-comma": [true, "always"],
     "interface-name": [true, "never-prefix"],
     "one-line": [true, "check-else", "check-whitespace", "check-open-brace"],
     "quotemark": [true, "single", "avoid-escape"],
+    "semicolon": false,
     "typedef-whitespace": [
       true,
       {
