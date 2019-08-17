@@ -2,6 +2,7 @@ export interface PackageLockRoot {
   name: string;
   version: string;
   preserveSymlinks: false;
+  lockfileVersion: number;
   dependencies: PackageLockDependencyMap;
 }
 

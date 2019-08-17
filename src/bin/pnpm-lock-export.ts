@@ -31,5 +31,5 @@ if (
 
 async function run() {
   const main = (await import('../index')).default;
-  await main(...argv);
+  await main();
 }

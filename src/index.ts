@@ -1,53 +1,67 @@
-import { readCurrentLockfile } from '@pnpm/lockfile-file';
-import {
-  PackageSnapshot,
-  PackageSnapshots,
-  ResolvedDependencies
-} from '@pnpm/lockfile-types';
-import { PackageLockDependency, PackageLockDependencyMap } from './packageLock';
+// tslint:disable object-literal-sort-keys
+import { readWantedLockfile } from '@pnpm/lockfile-file';
+import { ResolvedDependencies } from '@pnpm/lockfile-types';
+import { writeFile } from 'fs';
+import { resolve } from 'path';
+import { PackageLockRoot } from './packageLock';
+import { parsePackageMap } from './parse';
 
-const entryToSnapshotKey = (k: [string, string]) => `/${k[0]}/${k[1]}`;
+const main = async (opts: { path?: string } = {}) => {
+  const path = opts.path ? resolve(process.cwd(), opts.path) : process.cwd();
 
-const main = async (...args: string[]) => {
-  const lock = await readCurrentLockfile(process.cwd(), {
-    ignoreIncompatible: false
+  const lock = await readWantedLockfile(path, {
+    ignoreIncompatible: true
   });
+
   if (!lock) {
     throw new Error('pnpm lockfile not found');
   }
+  // TODO: Warn if lockfile version greater than latest tested
 
-  const parseMap = parsePackageMap(lock.packages!);
+  let rootDependencyFlatMap: ResolvedDependencies = {};
+  for (const importer of Object.values(lock.importers)) {
+    rootDependencyFlatMap = {
+      ...rootDependencyFlatMap,
+      ...(importer.dependencies || {})
+    };
+    rootDependencyFlatMap = {
+      ...rootDependencyFlatMap,
+      ...(importer.devDependencies || {})
+    };
+    rootDependencyFlatMap = {
+      ...rootDependencyFlatMap,
+      ...(importer.optionalDependencies || {})
+    };
+  }
 
-  const dependencies = parseMap(lock.importers['.'].dependencies!);
+  try {
+    const dependencies = parsePackageMap(
+      rootDependencyFlatMap,
+      lock.packages!,
+      {}
+    );
 
-  return dependencies;
-};
+    const packageLock: PackageLockRoot = {
+      name: 'testing uuu',
+      preserveSymlinks: false,
+      version: '0.0.1',
+      lockfileVersion: 1,
+      dependencies
+    };
 
-const parsePackage = (packages: PackageSnapshots) => (
-  packageName: string,
-  packageVersion: string
-): PackageLockDependencyMap => {
-  const parseMap = parsePackageMap(packages);
-  const snapshot = packages[entryToSnapshotKey([packageName, packageVersion])];
-  const packageLockNode: PackageLockDependency = {
-    dependencies: snapshot.dependencies && parseMap(snapshot.dependencies),
-    dev: snapshot.dev,
-    requires: {},
-    version: snapshot.version
-  };
-
-  return { [packageName]: packageLockNode };
-};
-
-const parsePackageMap = (packages: PackageSnapshots) => (
-  dependencyMap: ResolvedDependencies
-): PackageLockDependencyMap => {
-  const parseItem = parsePackage(packages);
-  const snapshots = Object.entries(dependencyMap)
-    .map(item => parseItem(item[0], item[1]))
-    .reduce((acc, val) => ({ ...acc, ...val }), {});
-
-  return snapshots;
+    await new Promise((res, rej) => {
+      writeFile(
+        resolve(path, 'package-lock.json'),
+        JSON.stringify(packageLock),
+        err => {
+          if (err) rej(err);
+          res();
+        }
+      );
+    });
+  } catch (e) {
+    process.exit(1);
+  }
 };
 
 export default main;
