@@ -2,9 +2,10 @@
 
 import { unlink } from 'fs';
 import { resolve } from 'path';
-import tape = require('tape');
+import * as rimraf from 'rimraf';
 import promisifyTape from 'tape-promise';
 import main from '../src';
+import tape = require('tape');
 
 const test = promisifyTape(tape);
 

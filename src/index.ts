@@ -1,6 +1,7 @@
 // tslint:disable object-literal-sort-keys
 import { readWantedLockfile } from '@pnpm/lockfile-file';
 import { ResolvedDependencies } from '@pnpm/lockfile-types';
+import readPackageJson from '@pnpm/read-package-json';
 import { writeFile } from 'fs';
 import { resolve } from 'path';
 import { PackageLockRoot } from './packageLock';
@@ -19,19 +20,16 @@ const main = async (opts: { path?: string } = {}) => {
   // TODO: Warn if lockfile version greater than latest tested
 
   let rootDependencyFlatMap: ResolvedDependencies = {};
+  const dependencyKeys = [
+    'dependencies',
+    'devDependencies',
+    'optionalDependencies'
+  ] as const;
   for (const importer of Object.values(lock.importers)) {
-    rootDependencyFlatMap = {
-      ...rootDependencyFlatMap,
-      ...(importer.dependencies || {})
-    };
-    rootDependencyFlatMap = {
-      ...rootDependencyFlatMap,
-      ...(importer.devDependencies || {})
-    };
-    rootDependencyFlatMap = {
-      ...rootDependencyFlatMap,
-      ...(importer.optionalDependencies || {})
-    };
+    for (const key of dependencyKeys) {
+      if (importer[key])
+        rootDependencyFlatMap = { ...rootDependencyFlatMap, ...importer[key] };
+    }
   }
 
   try {
@@ -41,10 +39,12 @@ const main = async (opts: { path?: string } = {}) => {
       {}
     );
 
+    const pkgJson = await readPackageJson(resolve(path, 'package.json'));
+
     const packageLock: PackageLockRoot = {
-      name: 'testing uuu',
+      name: pkgJson.name,
       preserveSymlinks: false,
-      version: '0.0.1',
+      version: pkgJson.version,
       lockfileVersion: 1,
       dependencies
     };

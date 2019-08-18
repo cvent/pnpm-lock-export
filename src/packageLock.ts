@@ -1,7 +1,7 @@
 export interface PackageLockRoot {
-  name: string;
-  version: string;
-  preserveSymlinks: false;
+  name?: string;
+  version?: string;
+  preserveSymlinks?: false;
   lockfileVersion: number;
   dependencies: PackageLockDependencyMap;
 }
@@ -15,7 +15,7 @@ export interface PackageLockRequireMap {
 }
 
 export interface PackageLockDependency {
-  version?: string;
+  version: string;
   integrity?: string;
   resolved?: string;
   dev?: boolean;
