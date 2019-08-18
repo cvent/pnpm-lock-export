@@ -1,6 +1,6 @@
 {
-  "name": "pnpm-lock-export",
-  "version": "0.0.1",
+  "name": "@emily-curry/pnpm-lock-export",
+  "version": "0.1.0",
   "description": "A utility for converting pnpm-lock.yaml to package-lock.json",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
