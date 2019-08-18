@@ -3,6 +3,7 @@ dependencies:
   '@pnpm/read-package-json': 2.0.3
   immer: 3.2.0
   lodash: 4.17.15
+  sorted-object: 2.0.1
 devDependencies:
   '@pnpm/lockfile-types': 1.1.0
   '@pnpm/logger': 2.1.1
@@ -2591,6 +2592,10 @@ packages:
     dev: true
     resolution:
       integrity: sha1-VusCfWW00tzmyy4tMsTUr8nh1wc=
+  /sorted-object/2.0.1:
+    dev: false
+    resolution:
+      integrity: sha1-fWMfS9OnmKJK8d/8+/6DM3pd9fw=
   /source-map-support/0.5.13:
     dependencies:
       buffer-from: 1.1.1
@@ -3260,6 +3265,7 @@ specifiers:
   npm-run-all: ^4.1.5
   prettier: ^1.18.2
   rimraf: ^3.0.0
+  sorted-object: ^2.0.1
   tape: ^4.11.0
   tape-promise: ^4.0.0
   ts-node: ^8.3.0

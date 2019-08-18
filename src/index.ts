@@ -6,6 +6,7 @@ import { writeFile } from 'fs';
 import { resolve } from 'path';
 import { PackageLockRoot } from './packageLock';
 import { parsePackageMap } from './parse';
+import { flatten } from './flatten';
 
 const main = async (opts: { path?: string } = {}) => {
   const path = opts.path ? resolve(process.cwd(), opts.path) : process.cwd();
@@ -20,24 +21,15 @@ const main = async (opts: { path?: string } = {}) => {
   // TODO: Warn if lockfile version greater than latest tested
 
   let rootDependencyFlatMap: ResolvedDependencies = {};
-  const dependencyKeys = [
-    'dependencies',
-    'devDependencies',
-    'optionalDependencies'
-  ] as const;
+  const dependencyKeys = ['dependencies', 'devDependencies', 'optionalDependencies'] as const;
   for (const importer of Object.values(lock.importers)) {
     for (const key of dependencyKeys) {
-      if (importer[key])
-        rootDependencyFlatMap = { ...rootDependencyFlatMap, ...importer[key] };
+      if (importer[key]) rootDependencyFlatMap = { ...rootDependencyFlatMap, ...importer[key] };
     }
   }
 
   try {
-    const dependencies = parsePackageMap(
-      rootDependencyFlatMap,
-      lock.packages!,
-      {}
-    );
+    const dependencies = parsePackageMap(rootDependencyFlatMap, lock.packages!, {});
 
     const pkgJson = await readPackageJson(resolve(path, 'package.json'));
 
@@ -50,17 +42,13 @@ const main = async (opts: { path?: string } = {}) => {
     };
 
     await new Promise((res, rej) => {
-      writeFile(
-        resolve(path, 'package-lock.json'),
-        JSON.stringify(packageLock),
-        err => {
-          if (err) rej(err);
-          res();
-        }
-      );
+      writeFile(resolve(path, 'package-lock.json'), JSON.stringify(packageLock), err => {
+        if (err) rej(err);
+        res();
+      });
     });
   } catch (e) {
-    process.exit(1);
+    throw e;
   }
 };
 

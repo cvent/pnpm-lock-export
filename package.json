@@ -15,12 +15,12 @@
     "build": "rimraf lib && tsc",
     "test": "run-s test:e2e",
     "test:tap": "ts-node --project tsconfig.test.json --files -- test",
-    "test:tap:watch": "ts-node-dev --inspect --respawn --project tsconfig.test.json --files -- node_modules/tape/bin/tape test/**/*.ts",
+    "test:tap:watch": "ts-node-dev --inspect --respawn --project tsconfig.test.json --files -- node_modules/tape/bin/tape test/*.ts",
     "pretest:e2e": "registry-mock prepare",
     "test:e2e": "run-p -r registry-mock test:tap",
     "registry-mock": "registry-mock",
-    "lint": "tslint -p tsconfig.test.json -c tslint.json src/**/*.ts test/**/*.ts",
-    "lint:fix": "tslint --fix -p tsconfig.test.json -c tslint.json src/**/*.ts test/**/*.ts"
+    "lint": "tslint -p tsconfig.test.json -c tslint.json src/**/*.ts test/*.ts",
+    "lint:fix": "tslint --fix -p tsconfig.test.json -c tslint.json src/**/*.ts test/*.ts"
   },
   "author": "Emily Curry <emily@curry.sh>",
   "license": "MIT",
@@ -28,7 +28,8 @@
     "@pnpm/lockfile-file": "^1.1.2",
     "@pnpm/read-package-json": "^2.0.3",
     "immer": "^3.2.0",
-    "lodash": "^4.17.15"
+    "lodash": "^4.17.15",
+    "sorted-object": "^2.0.1"
   },
   "devDependencies": {
     "@pnpm/lockfile-types": "^1.1.0",
