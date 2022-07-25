@@ -1,0 +1,10 @@
+{
+  "name": "complex",
+  "version": "1.0.0",
+  "dependencies": {
+    "lodash": "github:lodash/lodash#2da024c3b4f9947a48517639de7560457cd4ec6c",
+    "top-10": "link:../top-10",
+    "simple": "workspace:*",
+    "execa": "npm:safe-execa@0.1.2"
+  }
+}

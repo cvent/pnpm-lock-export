@@ -1,35 +1,16 @@
-let argv = process.argv.slice(2);
-
-const dashDashIndex = argv.indexOf('--');
-const nonEscapedArgv =
-  dashDashIndex === -1 ? argv : argv.slice(0, dashDashIndex);
-
-if (
-  nonEscapedArgv.includes('--help') ||
-  nonEscapedArgv.includes('-h') ||
-  nonEscapedArgv.includes('--h')
-) {
-  argv = ['help'].concat(argv);
-}
+import { writeFile } from 'fs/promises';
+import parseLock from '..';
+import { ArgumentParser } from 'argparse';
+import { version, description } from '../../package.json';
 
 (async () => {
-  // tslint:disable-line:no-floating-promises
-  switch (argv[0]) {
-    case '-v':
-    case '--version':
-      const pkg = require('../../package.json');
-      console.log(pkg.version);
-      break;
-    case 'help':
-      console.log('do something helpful');
-      break;
-    default:
-      await run();
-      break;
-  }
-})();
+  const parser = new ArgumentParser({ description, add_help: true, exit_on_error: true });
+  parser.add_argument('-v', '--version', { action: 'version', version });
+  parser.parse_args();
 
-async function run() {
-  const main = (await import('../index')).default;
-  await main();
-}
+  const lockfile = await parseLock(process.cwd());
+  await writeFile('package-lock.json', JSON.stringify(lockfile, undefined, 2));
+})().catch(e => {
+  console.error(e);
+  process.exit(1)
+});
