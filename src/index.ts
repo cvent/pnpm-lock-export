@@ -15,7 +15,8 @@ export default async function (lockfileDir: string): Promise<PackageLockV1> {
       `Your lockfile version (${lock.lockfileVersion}) is higher than the supported version of pnpm-lock-export (${latestSupportedLockfileVersion}).`
     );
 
-  // Use some default dummy values if name/version are not available. They are not usually
+  // Use some default dummy values if name/version are not available.
+  // They should not be authoritive in the package-lock.json anyway.
   const { name, version } = await readProjectManifestOnly(lockfileDir).then(
     ({ name, version }) => {
       if (!name) console.warn("Package name not found in manifest, using placeholder value ('package').");
