@@ -2,7 +2,7 @@ import type { TarballResolution } from '@pnpm/lockfile-types';
 import { nameVerFromPkgSnapshot, pkgSnapshotToResolution } from '@pnpm/lockfile-utils';
 
 import type { Package, YarnLock } from './types';
-import { parseLockfile } from '../../pnpm';
+import { depPathFromDependency, parseLockfile } from '../../pnpm';
 import { writeFile } from 'fs/promises';
 
 export async function convert(lockfileDir: string): Promise<YarnLock> {
@@ -21,7 +21,14 @@ export async function convert(lockfileDir: string): Promise<YarnLock> {
       const integrity = (resolution as TarballResolution).integrity;
       if (integrity) pkg.integrity = integrity;
 
-      if (snapshot.dependencies) pkg.dependencies = snapshot.dependencies;
+      if (snapshot.dependencies) {
+        pkg.dependencies = Object.fromEntries(
+          Object.entries(snapshot.dependencies ?? {}).map((entry) => {
+            const { name, version } = depPathFromDependency(entry);
+            return [name ?? entry[0], version ?? entry[1]];
+          })
+        );
+      }
 
       return [`${name}@${version}`, pkg];
     })
@@ -38,7 +45,7 @@ export function serialize(lock: YarnLock): string {
   integrity ${pkg.integrity}
 `;
 
-      if (pkg.dependencies) {
+      if (pkg.dependencies && Object.keys(pkg.dependencies).length) {
         const deps = Object.entries(pkg.dependencies)
           .map(([k, v]) => `    "${k}" "${v}"`)
           .join('\n');

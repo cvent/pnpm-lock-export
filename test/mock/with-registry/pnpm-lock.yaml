@@ -7,23 +7,16 @@ devDependencies:
   has-aliased-git-dependency: 1.0.0
 
 packages:
+
   /has-aliased-git-dependency/1.0.0:
-    resolution:
-      {
-        integrity: sha512-p5WT6JTw/egcTVm9+urvlTWJhxD9UJ5IXyL0XZO8+rytP1DMJzmYnm8lpFEnh5u1zf6HjQGK9oaWKVMeKmte8A==,
-        tarball: http://localhost:4873/has-aliased-git-dependency/-/has-aliased-git-dependency-1.0.0.tgz,
-      }
+    resolution: {integrity: sha512-p5WT6JTw/egcTVm9+urvlTWJhxD9UJ5IXyL0XZO8+rytP1DMJzmYnm8lpFEnh5u1zf6HjQGK9oaWKVMeKmte8A==, tarball: http://localhost:4873/has-aliased-git-dependency/-/has-aliased-git-dependency-1.0.0.tgz}
     dependencies:
       has-say-hi-peer: 1.0.0_hi@1.0.0
       say-hi: github.com/zkochan/hi/4cdebec76b7b9d1f6e219e06c42d92a6b8ea60cd
     dev: true
 
   /has-say-hi-peer/1.0.0_hi@1.0.0:
-    resolution:
-      {
-        integrity: sha512-BU67ThwxbR5IlWt+MWEgdr54p3TCvtp//nggAxZRnt7/RsYN9Vqqsfv1oAq1Z6fgYJRWoFb6/bUGOtrtAs4coA==,
-        tarball: http://localhost:4873/has-say-hi-peer/-/has-say-hi-peer-1.0.0.tgz,
-      }
+    resolution: {integrity: sha512-BU67ThwxbR5IlWt+MWEgdr54p3TCvtp//nggAxZRnt7/RsYN9Vqqsfv1oAq1Z6fgYJRWoFb6/bUGOtrtAs4coA==, tarball: http://localhost:4873/has-say-hi-peer/-/has-say-hi-peer-1.0.0.tgz}
     peerDependencies:
       say-hi: '*'
     dependencies:
@@ -31,7 +24,7 @@ packages:
     dev: true
 
   github.com/zkochan/hi/4cdebec76b7b9d1f6e219e06c42d92a6b8ea60cd:
-    resolution: { tarball: https://codeload.github.com/zkochan/hi/tar.gz/4cdebec76b7b9d1f6e219e06c42d92a6b8ea60cd }
+    resolution: {tarball: https://codeload.github.com/zkochan/hi/tar.gz/4cdebec76b7b9d1f6e219e06c42d92a6b8ea60cd}
     name: hi
     version: 1.0.0
     hasBin: true

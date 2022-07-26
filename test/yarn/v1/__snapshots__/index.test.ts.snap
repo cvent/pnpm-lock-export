@@ -878,7 +878,7 @@ Object {
       "@vue/compiler-dom": "3.2.37",
       "@vue/compiler-sfc": "3.2.37",
       "@vue/runtime-dom": "3.2.37",
-      "@vue/server-renderer": "3.2.37_vue@3.2.37",
+      "@vue/server-renderer": "3.2.37",
       "@vue/shared": "3.2.37",
     },
     "integrity": "sha512-bOKEZxrm8Eh+fveCqS1/NkG/n6aMidsI6hahas7pa0w/l7jkbssJVsRhVDs07IdDq7h9KHswZOgItnwJAgtVtQ==",
@@ -892,7 +892,7 @@ exports[`with-registry 1`] = `
 Object {
   "has-aliased-git-dependency@1.0.0": Object {
     "dependencies": Object {
-      "has-say-hi-peer": "1.0.0_hi@1.0.0",
+      "has-say-hi-peer": "1.0.0",
       "say-hi": "github.com/zkochan/hi/4cdebec76b7b9d1f6e219e06c42d92a6b8ea60cd",
     },
     "integrity": "sha512-p5WT6JTw/egcTVm9+urvlTWJhxD9UJ5IXyL0XZO8+rytP1DMJzmYnm8lpFEnh5u1zf6HjQGK9oaWKVMeKmte8A==",
