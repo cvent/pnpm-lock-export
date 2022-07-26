@@ -203,7 +203,7 @@ Object {
 }
 `;
 
-exports[`no-package-json 1`] = `
+exports[`minimal 1`] = `
 Object {
   "dependencies": Object {},
   "lockfileVersion": 1,

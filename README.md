@@ -1,3 +1,3 @@
 # pnpm-lock-export
 
-A CLI utility that reads a package.json and pnpm-lock.yaml, and outputs an `npm ci` compatible package-lock.json.
+A CLI utility that reads a pnpm-lock.yaml, and converts it to other lockfile formats.
