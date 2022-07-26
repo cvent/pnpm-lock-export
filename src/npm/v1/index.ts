@@ -39,7 +39,9 @@ export function serialize(lock: PackageLock): string {
 }
 
 export async function write(lockfileDir: string): Promise<void> {
-  await convert(lockfileDir).then(serialize).then(lock => writeFile('package-lock.json', lock));
+  await convert(lockfileDir)
+    .then(serialize)
+    .then((lock) => writeFile('package-lock.json', lock));
 }
 
 interface NamedDependency extends Dependency {
@@ -116,8 +118,7 @@ function namedDependenciesFromSnapshots(snapshots: PackageSnapshots): Record<str
 
 function dependenciesFromNamedDependencies(namedDependencies: Record<string, NamedDependency>): Dependencies {
   return Object.fromEntries(
-    Object
-      .entries(namedDependencies)
+    Object.entries(namedDependencies)
       // eslint-disable-next-line @typescript-eslint/no-unused-vars
       .map(([_, snapshot]) => {
         const dependency: Dependency = {
@@ -134,7 +135,7 @@ function dependenciesFromNamedDependencies(namedDependencies: Record<string, Nam
         return [snapshot.name, dependency];
       })
       .reverse()
-  )
+  );
 }
 
 function missingDepPaths(snapshots: PackageSnapshots): string[] {

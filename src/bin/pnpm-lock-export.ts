@@ -7,11 +7,11 @@ import { version, description } from '../../package.json';
   parser.add_argument('-v', '--version', { action: 'version', version });
   parser.add_argument('--schema', {
     choices: ['package-lock.json@v1', 'yarn.lock@v1'],
-    default: 'package-lock.json@v1'
+    default: 'package-lock.json@v1',
   });
   const args = parser.parse_args();
 
-  switch(args['schema']) {
+  switch (args['schema']) {
     case 'package-lock.json@v1': {
       await writePackageLockV1(process.cwd());
       break;
@@ -24,7 +24,7 @@ import { version, description } from '../../package.json';
       throw new Error(`Invalid schema: ${args['schema']}`);
     }
   }
-})().catch(e => {
+})().catch((e) => {
   console.error(e);
-  process.exit(1)
+  process.exit(1);
 });

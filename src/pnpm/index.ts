@@ -1,4 +1,4 @@
-import { Lockfile, readWantedLockfile } from "@pnpm/lockfile-file";
+import { Lockfile, readWantedLockfile } from '@pnpm/lockfile-file';
 
 const LATEST_SUPPORTED_PNPM_LOCK_VERSION = 5.4;
 
@@ -11,5 +11,5 @@ export async function parseLockfile(pkgPath: string): Promise<Lockfile> {
       `Your lockfile version (${lock.lockfileVersion}) is higher than the supported version of pnpm-lock-export (${LATEST_SUPPORTED_PNPM_LOCK_VERSION}).`
     );
 
-  return lock
+  return lock;
 }
