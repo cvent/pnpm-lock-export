@@ -6,6 +6,9 @@
   "files": [
     "dist/"
   ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "bin": "dist/src/bin/pnpm-lock-export.js",
   "scripts": {
     "build": "tsc",
