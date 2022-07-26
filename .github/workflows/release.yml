@@ -43,4 +43,5 @@ jobs:
       - run: pnpm test
       - name: 'Add NPM auth to .npmrc'
         run: 'echo -e "\n//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}" >> "${HOME}/.npmrc"'
-      - run: pnpm publish
+        # No git checks because actions triggered by releases are not on a branch
+      - run: pnpm publish --no-git-checks
