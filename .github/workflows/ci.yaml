@@ -19,7 +19,7 @@ jobs:
         uses: 'actions/cache@v3'
         id: 'asdf-cache'
         with:
-          path: '~/.asdf',
+          path: '~/.asdf'
           key: "${{ runner.os }}-${{ runner.arch }}-asdf-cache-v1-${{ hashFiles('**/.tool-versions') }}"
           restore-keys: |
             '${{ runner.os }}-${{ runner.arch }}-asdf-cache-v1-'
