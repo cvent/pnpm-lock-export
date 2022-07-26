@@ -1,15 +1,14 @@
-name: Publish Package to GitHub Packages
+name: CI
 
 on:
-  release:
-    types: [created]
+  pull_request:
+    branches: [main]
 
 jobs:
   build:
     runs-on: ubuntu-latest
     permissions: 
       contents: read
-      packages: write
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -41,6 +40,3 @@ jobs:
       - run: pnpm build
       - run: pnpm lint
       - run: pnpm test
-      - name: 'Add NPM auth to .npmrc'
-        run: 'echo -e "\n//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}" >> "${HOME}/.npmrc"'
-      - run: pnpm publish
