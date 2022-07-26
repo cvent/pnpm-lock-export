@@ -2,7 +2,7 @@
 
 exports[`complex 1`] = `
 Object {
-  "@zkochan/which/2.0.3": Object {
+  "@zkochan/which@2.0.3": Object {
     "dependencies": Object {
       "isexe": "2.0.0",
     },
@@ -10,7 +10,7 @@ Object {
     "resolved": "https://registry.npmjs.org/@zkochan/which/-/which-2.0.3.tgz",
     "version": "2.0.3",
   },
-  "cross-spawn/7.0.3": Object {
+  "cross-spawn@7.0.3": Object {
     "dependencies": Object {
       "path-key": "3.1.1",
       "shebang-command": "2.0.0",
@@ -20,7 +20,7 @@ Object {
     "resolved": "https://registry.npmjs.org/cross-spawn/-/cross-spawn-7.0.3.tgz",
     "version": "7.0.3",
   },
-  "execa/5.1.1": Object {
+  "execa@5.1.1": Object {
     "dependencies": Object {
       "cross-spawn": "7.0.3",
       "get-stream": "6.0.1",
@@ -36,36 +36,36 @@ Object {
     "resolved": "https://registry.npmjs.org/execa/-/execa-5.1.1.tgz",
     "version": "5.1.1",
   },
-  "get-stream/6.0.1": Object {
+  "get-stream@6.0.1": Object {
     "integrity": "sha512-ts6Wi+2j3jQjqi70w5AlN8DFnkSwC+MqmxEzdEALB2qXZYV3X/b1CTfgPLGJNMeAWxdPfU8FO1ms3NUfaHCPYg==",
     "resolved": "https://registry.npmjs.org/get-stream/-/get-stream-6.0.1.tgz",
     "version": "6.0.1",
   },
-  "github.com/lodash/lodash/2da024c3b4f9947a48517639de7560457cd4ec6c": Object {
-    "resolved": "https://codeload.github.com/lodash/lodash/tar.gz/2da024c3b4f9947a48517639de7560457cd4ec6c",
-    "version": "5.0.0",
-  },
-  "human-signals/2.1.0": Object {
+  "human-signals@2.1.0": Object {
     "integrity": "sha512-B4FFZ6q/T2jhhksgkbEW3HBvWIfDW85snkQgawt07S7J5QXTk6BkNV+0yAeZrM5QpMAdYlocGoljn0sJ/WQkFw==",
     "resolved": "https://registry.npmjs.org/human-signals/-/human-signals-2.1.0.tgz",
     "version": "2.1.0",
   },
-  "is-stream/2.0.1": Object {
+  "is-stream@2.0.1": Object {
     "integrity": "sha512-hFoiJiTl63nn+kstHGBtewWSKnQLpyb155KHheA1l39uvtO9nWIop1p3udqPcUd/xbF1VLMO4n7OI6p7RbngDg==",
     "resolved": "https://registry.npmjs.org/is-stream/-/is-stream-2.0.1.tgz",
     "version": "2.0.1",
   },
-  "isexe/2.0.0": Object {
+  "isexe@2.0.0": Object {
     "integrity": "sha512-RHxMLp9lnKHGHRng9QFhRCMbYAcVpn69smSGcq3f36xjgVVWThj4qqLbTLlq7Ssj8B+fIQ1EuCEGI2lKsyQeIw==",
     "resolved": "https://registry.npmjs.org/isexe/-/isexe-2.0.0.tgz",
     "version": "2.0.0",
   },
-  "js-tokens/4.0.0": Object {
+  "js-tokens@4.0.0": Object {
     "integrity": "sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==",
     "resolved": "https://registry.npmjs.org/js-tokens/-/js-tokens-4.0.0.tgz",
     "version": "4.0.0",
   },
-  "loose-envify/1.4.0": Object {
+  "lodash@5.0.0": Object {
+    "resolved": "https://codeload.github.com/lodash/lodash/tar.gz/2da024c3b4f9947a48517639de7560457cd4ec6c",
+    "version": "5.0.0",
+  },
+  "loose-envify@1.4.0": Object {
     "dependencies": Object {
       "js-tokens": "4.0.0",
     },
@@ -73,17 +73,17 @@ Object {
     "resolved": "https://registry.npmjs.org/loose-envify/-/loose-envify-1.4.0.tgz",
     "version": "1.4.0",
   },
-  "merge-stream/2.0.0": Object {
+  "merge-stream@2.0.0": Object {
     "integrity": "sha512-abv/qOcuPfk3URPfDzmZU1LKmuw8kT+0nIHvKrKgFrwifol/doWcdA4ZqsWQ8ENrFKkd67Mfpo/LovbIUsbt3w==",
     "resolved": "https://registry.npmjs.org/merge-stream/-/merge-stream-2.0.0.tgz",
     "version": "2.0.0",
   },
-  "mimic-fn/2.1.0": Object {
+  "mimic-fn@2.1.0": Object {
     "integrity": "sha512-OqbOk5oEQeAZ8WXWydlu9HJjz9WVdEIvamMCcXmuqUYjTknH/sqsWvhQ3vgwKFRR1HpjvNBKQ37nbJgYzGqGcg==",
     "resolved": "https://registry.npmjs.org/mimic-fn/-/mimic-fn-2.1.0.tgz",
     "version": "2.1.0",
   },
-  "npm-run-path/4.0.1": Object {
+  "npm-run-path@4.0.1": Object {
     "dependencies": Object {
       "path-key": "3.1.1",
     },
@@ -91,7 +91,7 @@ Object {
     "resolved": "https://registry.npmjs.org/npm-run-path/-/npm-run-path-4.0.1.tgz",
     "version": "4.0.1",
   },
-  "onetime/5.1.2": Object {
+  "onetime@5.1.2": Object {
     "dependencies": Object {
       "mimic-fn": "2.1.0",
     },
@@ -99,17 +99,17 @@ Object {
     "resolved": "https://registry.npmjs.org/onetime/-/onetime-5.1.2.tgz",
     "version": "5.1.2",
   },
-  "path-key/3.1.1": Object {
+  "path-key@3.1.1": Object {
     "integrity": "sha512-ojmeN0qd+y0jszEtoY48r0Peq5dwMEkIlCOu6Q5f41lfkswXuKtYrhgoTpLnyIcHm24Uhqx+5Tqm2InSwLhE6Q==",
     "resolved": "https://registry.npmjs.org/path-key/-/path-key-3.1.1.tgz",
     "version": "3.1.1",
   },
-  "path-name/1.0.0": Object {
+  "path-name@1.0.0": Object {
     "integrity": "sha512-/dcAb5vMXH0f51yvMuSUqFpxUcA8JelbRmE5mW/p4CUJxrNgK24IkstnV7ENtg2IDGBOu6izKTG6eilbnbNKWQ==",
     "resolved": "https://registry.npmjs.org/path-name/-/path-name-1.0.0.tgz",
     "version": "1.0.0",
   },
-  "react/18.2.0": Object {
+  "react@18.2.0": Object {
     "dependencies": Object {
       "loose-envify": "1.4.0",
     },
@@ -117,7 +117,7 @@ Object {
     "resolved": "https://registry.npmjs.org/react/-/react-18.2.0.tgz",
     "version": "18.2.0",
   },
-  "safe-execa/0.1.2": Object {
+  "safe-execa@0.1.2": Object {
     "dependencies": Object {
       "@zkochan/which": "2.0.3",
       "execa": "5.1.1",
@@ -127,7 +127,7 @@ Object {
     "resolved": "https://registry.npmjs.org/safe-execa/-/safe-execa-0.1.2.tgz",
     "version": "0.1.2",
   },
-  "shebang-command/2.0.0": Object {
+  "shebang-command@2.0.0": Object {
     "dependencies": Object {
       "shebang-regex": "3.0.0",
     },
@@ -135,22 +135,22 @@ Object {
     "resolved": "https://registry.npmjs.org/shebang-command/-/shebang-command-2.0.0.tgz",
     "version": "2.0.0",
   },
-  "shebang-regex/3.0.0": Object {
+  "shebang-regex@3.0.0": Object {
     "integrity": "sha512-7++dFhtcx3353uBaq8DDR4NuxBetBzC7ZQOhmTQInHEd6bSrXdiEyzCvG07Z44UYdLShWUyXt5M/yhz8ekcb1A==",
     "resolved": "https://registry.npmjs.org/shebang-regex/-/shebang-regex-3.0.0.tgz",
     "version": "3.0.0",
   },
-  "signal-exit/3.0.7": Object {
+  "signal-exit@3.0.7": Object {
     "integrity": "sha512-wnD2ZE+l+SPC/uoS0vXeE9L1+0wuaMqKlfz9AMUo38JsyLSBWSFcHR1Rri62LZc12vLr1gb3jl7iwQhgwpAbGQ==",
     "resolved": "https://registry.npmjs.org/signal-exit/-/signal-exit-3.0.7.tgz",
     "version": "3.0.7",
   },
-  "strip-final-newline/2.0.0": Object {
+  "strip-final-newline@2.0.0": Object {
     "integrity": "sha512-BrpvfNAE3dcvq7ll3xVumzjKjZQ5tI1sEUIKr3Uoks0XUl45St3FlatVqef9prk4jRDzhW6WZg+3bk93y6pLjA==",
     "resolved": "https://registry.npmjs.org/strip-final-newline/-/strip-final-newline-2.0.0.tgz",
     "version": "2.0.0",
   },
-  "which/2.0.2": Object {
+  "which@2.0.2": Object {
     "dependencies": Object {
       "isexe": "2.0.0",
     },
@@ -165,12 +165,12 @@ exports[`minimal 1`] = `Object {}`;
 
 exports[`top-10 1`] = `
 Object {
-  "@babel/helper-validator-identifier/7.18.6": Object {
+  "@babel/helper-validator-identifier@7.18.6": Object {
     "integrity": "sha512-MmetCkz9ej86nJQV+sFCxoGGrUbU3q02kgLciwkrt9QqEB7cP39oKEY0PakknEO0Gu20SskMRi+AYZ3b1TpN9g==",
     "resolved": "https://registry.npmjs.org/@babel/helper-validator-identifier/-/helper-validator-identifier-7.18.6.tgz",
     "version": "7.18.6",
   },
-  "@babel/parser/7.18.9": Object {
+  "@babel/parser@7.18.9": Object {
     "dependencies": Object {
       "@babel/types": "7.18.9",
     },
@@ -178,7 +178,7 @@ Object {
     "resolved": "https://registry.npmjs.org/@babel/parser/-/parser-7.18.9.tgz",
     "version": "7.18.9",
   },
-  "@babel/types/7.18.9": Object {
+  "@babel/types@7.18.9": Object {
     "dependencies": Object {
       "@babel/helper-validator-identifier": "7.18.6",
       "to-fast-properties": "2.0.0",
@@ -187,7 +187,7 @@ Object {
     "resolved": "https://registry.npmjs.org/@babel/types/-/types-7.18.9.tgz",
     "version": "7.18.9",
   },
-  "@vue/compiler-core/3.2.37": Object {
+  "@vue/compiler-core@3.2.37": Object {
     "dependencies": Object {
       "@babel/parser": "7.18.9",
       "@vue/shared": "3.2.37",
@@ -198,7 +198,7 @@ Object {
     "resolved": "https://registry.npmjs.org/@vue/compiler-core/-/compiler-core-3.2.37.tgz",
     "version": "3.2.37",
   },
-  "@vue/compiler-dom/3.2.37": Object {
+  "@vue/compiler-dom@3.2.37": Object {
     "dependencies": Object {
       "@vue/compiler-core": "3.2.37",
       "@vue/shared": "3.2.37",
@@ -207,7 +207,7 @@ Object {
     "resolved": "https://registry.npmjs.org/@vue/compiler-dom/-/compiler-dom-3.2.37.tgz",
     "version": "3.2.37",
   },
-  "@vue/compiler-sfc/3.2.37": Object {
+  "@vue/compiler-sfc@3.2.37": Object {
     "dependencies": Object {
       "@babel/parser": "7.18.9",
       "@vue/compiler-core": "3.2.37",
@@ -224,7 +224,7 @@ Object {
     "resolved": "https://registry.npmjs.org/@vue/compiler-sfc/-/compiler-sfc-3.2.37.tgz",
     "version": "3.2.37",
   },
-  "@vue/compiler-ssr/3.2.37": Object {
+  "@vue/compiler-ssr@3.2.37": Object {
     "dependencies": Object {
       "@vue/compiler-dom": "3.2.37",
       "@vue/shared": "3.2.37",
@@ -233,7 +233,7 @@ Object {
     "resolved": "https://registry.npmjs.org/@vue/compiler-ssr/-/compiler-ssr-3.2.37.tgz",
     "version": "3.2.37",
   },
-  "@vue/reactivity-transform/3.2.37": Object {
+  "@vue/reactivity-transform@3.2.37": Object {
     "dependencies": Object {
       "@babel/parser": "7.18.9",
       "@vue/compiler-core": "3.2.37",
@@ -245,7 +245,7 @@ Object {
     "resolved": "https://registry.npmjs.org/@vue/reactivity-transform/-/reactivity-transform-3.2.37.tgz",
     "version": "3.2.37",
   },
-  "@vue/reactivity/3.2.37": Object {
+  "@vue/reactivity@3.2.37": Object {
     "dependencies": Object {
       "@vue/shared": "3.2.37",
     },
@@ -253,7 +253,7 @@ Object {
     "resolved": "https://registry.npmjs.org/@vue/reactivity/-/reactivity-3.2.37.tgz",
     "version": "3.2.37",
   },
-  "@vue/runtime-core/3.2.37": Object {
+  "@vue/runtime-core@3.2.37": Object {
     "dependencies": Object {
       "@vue/reactivity": "3.2.37",
       "@vue/shared": "3.2.37",
@@ -262,7 +262,7 @@ Object {
     "resolved": "https://registry.npmjs.org/@vue/runtime-core/-/runtime-core-3.2.37.tgz",
     "version": "3.2.37",
   },
-  "@vue/runtime-dom/3.2.37": Object {
+  "@vue/runtime-dom@3.2.37": Object {
     "dependencies": Object {
       "@vue/runtime-core": "3.2.37",
       "@vue/shared": "3.2.37",
@@ -272,7 +272,7 @@ Object {
     "resolved": "https://registry.npmjs.org/@vue/runtime-dom/-/runtime-dom-3.2.37.tgz",
     "version": "3.2.37",
   },
-  "@vue/server-renderer/3.2.37_vue@3.2.37": Object {
+  "@vue/server-renderer@3.2.37": Object {
     "dependencies": Object {
       "@vue/compiler-ssr": "3.2.37",
       "@vue/shared": "3.2.37",
@@ -282,12 +282,12 @@ Object {
     "resolved": "https://registry.npmjs.org/@vue/server-renderer/-/server-renderer-3.2.37.tgz",
     "version": "3.2.37",
   },
-  "@vue/shared/3.2.37": Object {
+  "@vue/shared@3.2.37": Object {
     "integrity": "sha512-4rSJemR2NQIo9Klm1vabqWjD8rs/ZaJSzMxkMNeJS6lHiUjjUeYFbooN19NgFjztubEKh3WlZUeOLVdbbUWHsw==",
     "resolved": "https://registry.npmjs.org/@vue/shared/-/shared-3.2.37.tgz",
     "version": "3.2.37",
   },
-  "accepts/1.3.8": Object {
+  "accepts@1.3.8": Object {
     "dependencies": Object {
       "mime-types": "2.1.35",
       "negotiator": "0.6.3",
@@ -296,17 +296,17 @@ Object {
     "resolved": "https://registry.npmjs.org/accepts/-/accepts-1.3.8.tgz",
     "version": "1.3.8",
   },
-  "array-flatten/1.1.1": Object {
+  "array-flatten@1.1.1": Object {
     "integrity": "sha512-PCVAQswWemu6UdxsDFFX/+gVeYqKAod3D3UVm91jHwynguOwAvYPhx8nNlM++NqRcK6CxxpUafjmhIdKiHibqg==",
     "resolved": "https://registry.npmjs.org/array-flatten/-/array-flatten-1.1.1.tgz",
     "version": "1.1.1",
   },
-  "asynckit/0.4.0": Object {
+  "asynckit@0.4.0": Object {
     "integrity": "sha512-Oei9OH4tRh0YqU3GxhX79dM/mwVgvbZJaSNaRk+bshkj0S5cfHcgYakreBjrHwatXKbz+IoIdYLxrKim2MjW0Q==",
     "resolved": "https://registry.npmjs.org/asynckit/-/asynckit-0.4.0.tgz",
     "version": "0.4.0",
   },
-  "axios/0.27.2": Object {
+  "axios@0.27.2": Object {
     "dependencies": Object {
       "follow-redirects": "1.15.1",
       "form-data": "4.0.0",
@@ -315,7 +315,7 @@ Object {
     "resolved": "https://registry.npmjs.org/axios/-/axios-0.27.2.tgz",
     "version": "0.27.2",
   },
-  "body-parser/1.20.0": Object {
+  "body-parser@1.20.0": Object {
     "dependencies": Object {
       "bytes": "3.1.2",
       "content-type": "1.0.4",
@@ -334,12 +334,12 @@ Object {
     "resolved": "https://registry.npmjs.org/body-parser/-/body-parser-1.20.0.tgz",
     "version": "1.20.0",
   },
-  "bytes/3.1.2": Object {
+  "bytes@3.1.2": Object {
     "integrity": "sha512-/Nf7TyzTx6S3yRJObOAV7956r8cr2+Oj8AC5dt8wSP3BQAoeX58NoHyCU8P8zGkNXStjTSi6fzO6F0pBdcYbEg==",
     "resolved": "https://registry.npmjs.org/bytes/-/bytes-3.1.2.tgz",
     "version": "3.1.2",
   },
-  "call-bind/1.0.2": Object {
+  "call-bind@1.0.2": Object {
     "dependencies": Object {
       "function-bind": "1.1.1",
       "get-intrinsic": "1.1.2",
@@ -348,12 +348,12 @@ Object {
     "resolved": "https://registry.npmjs.org/call-bind/-/call-bind-1.0.2.tgz",
     "version": "1.0.2",
   },
-  "chalk/5.0.1": Object {
+  "chalk@5.0.1": Object {
     "integrity": "sha512-Fo07WOYGqMfCWHOzSXOt2CxDbC6skS/jO9ynEcmpANMoPrD+W1r1K6Vx7iNm+AQmETU1Xr2t+n8nzkV9t6xh3w==",
     "resolved": "https://registry.npmjs.org/chalk/-/chalk-5.0.1.tgz",
     "version": "5.0.1",
   },
-  "combined-stream/1.0.8": Object {
+  "combined-stream@1.0.8": Object {
     "dependencies": Object {
       "delayed-stream": "1.0.0",
     },
@@ -361,12 +361,12 @@ Object {
     "resolved": "https://registry.npmjs.org/combined-stream/-/combined-stream-1.0.8.tgz",
     "version": "1.0.8",
   },
-  "commander/9.4.0": Object {
+  "commander@9.4.0": Object {
     "integrity": "sha512-sRPT+umqkz90UA8M1yqYfnHlZA7fF6nSphDtxeywPZ49ysjxDQybzk13CL+mXekDRG92skbcqCLVovuCusNmFw==",
     "resolved": "https://registry.npmjs.org/commander/-/commander-9.4.0.tgz",
     "version": "9.4.0",
   },
-  "content-disposition/0.5.4": Object {
+  "content-disposition@0.5.4": Object {
     "dependencies": Object {
       "safe-buffer": "5.2.1",
     },
@@ -374,27 +374,27 @@ Object {
     "resolved": "https://registry.npmjs.org/content-disposition/-/content-disposition-0.5.4.tgz",
     "version": "0.5.4",
   },
-  "content-type/1.0.4": Object {
+  "content-type@1.0.4": Object {
     "integrity": "sha512-hIP3EEPs8tB9AT1L+NUqtwOAps4mk2Zob89MWXMHjHWg9milF/j4osnnQLXBCBFBk/tvIG/tUc9mOUJiPBhPXA==",
     "resolved": "https://registry.npmjs.org/content-type/-/content-type-1.0.4.tgz",
     "version": "1.0.4",
   },
-  "cookie-signature/1.0.6": Object {
+  "cookie-signature@1.0.6": Object {
     "integrity": "sha512-QADzlaHc8icV8I7vbaJXJwod9HWYp8uCqf1xa4OfNu1T7JVxQIrUgOWtHdNDtPiywmFbiS12VjotIXLrKM3orQ==",
     "resolved": "https://registry.npmjs.org/cookie-signature/-/cookie-signature-1.0.6.tgz",
     "version": "1.0.6",
   },
-  "cookie/0.5.0": Object {
+  "cookie@0.5.0": Object {
     "integrity": "sha512-YZ3GUyn/o8gfKJlnlX7g7xq4gyO6OSuhGPKaaGssGB2qgDUS0gPgtTvoyZLTt9Ab6dC4hfc9dV5arkvc/OCmrw==",
     "resolved": "https://registry.npmjs.org/cookie/-/cookie-0.5.0.tgz",
     "version": "0.5.0",
   },
-  "csstype/2.6.20": Object {
+  "csstype@2.6.20": Object {
     "integrity": "sha512-/WwNkdXfckNgw6S5R125rrW8ez139lBHWouiBvX8dfMFtcn6V81REDqnH7+CRpRipfYlyU1CmOnOxrmGcFOjeA==",
     "resolved": "https://registry.npmjs.org/csstype/-/csstype-2.6.20.tgz",
     "version": "2.6.20",
   },
-  "debug/2.6.9": Object {
+  "debug@2.6.9": Object {
     "dependencies": Object {
       "ms": "2.0.0",
     },
@@ -402,47 +402,47 @@ Object {
     "resolved": "https://registry.npmjs.org/debug/-/debug-2.6.9.tgz",
     "version": "2.6.9",
   },
-  "delayed-stream/1.0.0": Object {
+  "delayed-stream@1.0.0": Object {
     "integrity": "sha512-ZySD7Nf91aLB0RxL4KGrKHBXl7Eds1DAmEdcoVawXnLD7SDhpNgtuII2aAkg7a7QS41jxPSZ17p4VdGnMHk3MQ==",
     "resolved": "https://registry.npmjs.org/delayed-stream/-/delayed-stream-1.0.0.tgz",
     "version": "1.0.0",
   },
-  "depd/2.0.0": Object {
+  "depd@2.0.0": Object {
     "integrity": "sha512-g7nH6P6dyDioJogAAGprGpCtVImJhpPk/roCzdb3fIh61/s/nPsfR6onyMwkCAR/OlC3yBC0lESvUoQEAssIrw==",
     "resolved": "https://registry.npmjs.org/depd/-/depd-2.0.0.tgz",
     "version": "2.0.0",
   },
-  "destroy/1.2.0": Object {
+  "destroy@1.2.0": Object {
     "integrity": "sha512-2sJGJTaXIIaR1w4iJSNoN0hnMY7Gpc/n8D4qSCJw8QqFWXf7cuAgnEHxBpweaVcPevC2l3KpjYCx3NypQQgaJg==",
     "resolved": "https://registry.npmjs.org/destroy/-/destroy-1.2.0.tgz",
     "version": "1.2.0",
   },
-  "ee-first/1.1.1": Object {
+  "ee-first@1.1.1": Object {
     "integrity": "sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==",
     "resolved": "https://registry.npmjs.org/ee-first/-/ee-first-1.1.1.tgz",
     "version": "1.1.1",
   },
-  "encodeurl/1.0.2": Object {
+  "encodeurl@1.0.2": Object {
     "integrity": "sha512-TPJXq8JqFaVYm2CWmPvnP2Iyo4ZSM7/QKcSmuMLDObfpH5fi7RUGmd/rTDf+rut/saiDiQEeVTNgAmJEdAOx0w==",
     "resolved": "https://registry.npmjs.org/encodeurl/-/encodeurl-1.0.2.tgz",
     "version": "1.0.2",
   },
-  "escape-html/1.0.3": Object {
+  "escape-html@1.0.3": Object {
     "integrity": "sha512-NiSupZ4OeuGwr68lGIeym/ksIZMJodUGOSCZ/FSnTxcrekbvqrgdUxlJOMpijaKZVjAJrWrGs/6Jy8OMuyj9ow==",
     "resolved": "https://registry.npmjs.org/escape-html/-/escape-html-1.0.3.tgz",
     "version": "1.0.3",
   },
-  "estree-walker/2.0.2": Object {
+  "estree-walker@2.0.2": Object {
     "integrity": "sha512-Rfkk/Mp/DL7JVje3u18FxFujQlTNR2q6QfMSMB7AvCBx91NGj/ba3kCfza0f6dVDbw7YlRf/nDrn7pQrCCyQ/w==",
     "resolved": "https://registry.npmjs.org/estree-walker/-/estree-walker-2.0.2.tgz",
     "version": "2.0.2",
   },
-  "etag/1.8.1": Object {
+  "etag@1.8.1": Object {
     "integrity": "sha512-aIL5Fx7mawVa300al2BnEE4iNvo1qETxLrPI/o05L7z6go7fCw1J6EQmbK4FmJ2AS7kgVF/KEZWufBfdClMcPg==",
     "resolved": "https://registry.npmjs.org/etag/-/etag-1.8.1.tgz",
     "version": "1.8.1",
   },
-  "express/4.18.1": Object {
+  "express@4.18.1": Object {
     "dependencies": Object {
       "accepts": "1.3.8",
       "array-flatten": "1.1.1",
@@ -480,7 +480,7 @@ Object {
     "resolved": "https://registry.npmjs.org/express/-/express-4.18.1.tgz",
     "version": "4.18.1",
   },
-  "finalhandler/1.2.0": Object {
+  "finalhandler@1.2.0": Object {
     "dependencies": Object {
       "debug": "2.6.9",
       "encodeurl": "1.0.2",
@@ -494,12 +494,12 @@ Object {
     "resolved": "https://registry.npmjs.org/finalhandler/-/finalhandler-1.2.0.tgz",
     "version": "1.2.0",
   },
-  "follow-redirects/1.15.1": Object {
+  "follow-redirects@1.15.1": Object {
     "integrity": "sha512-yLAMQs+k0b2m7cVxpS1VKJVvoz7SS9Td1zss3XRwXj+ZDH00RJgnuLx7E44wx02kQLrdM3aOOy+FpzS7+8OizA==",
     "resolved": "https://registry.npmjs.org/follow-redirects/-/follow-redirects-1.15.1.tgz",
     "version": "1.15.1",
   },
-  "form-data/4.0.0": Object {
+  "form-data@4.0.0": Object {
     "dependencies": Object {
       "asynckit": "0.4.0",
       "combined-stream": "1.0.8",
@@ -509,22 +509,22 @@ Object {
     "resolved": "https://registry.npmjs.org/form-data/-/form-data-4.0.0.tgz",
     "version": "4.0.0",
   },
-  "forwarded/0.2.0": Object {
+  "forwarded@0.2.0": Object {
     "integrity": "sha512-buRG0fpBtRHSTCOASe6hD258tEubFoRLb4ZNA6NxMVHNw2gOcwHo9wyablzMzOA5z9xA9L1KNjk/Nt6MT9aYow==",
     "resolved": "https://registry.npmjs.org/forwarded/-/forwarded-0.2.0.tgz",
     "version": "0.2.0",
   },
-  "fresh/0.5.2": Object {
+  "fresh@0.5.2": Object {
     "integrity": "sha512-zJ2mQYM18rEFOudeV4GShTGIQ7RbzA7ozbU9I/XBpm7kqgMywgmylMwXHxZJmkVoYkna9d2pVXVXPdYTP9ej8Q==",
     "resolved": "https://registry.npmjs.org/fresh/-/fresh-0.5.2.tgz",
     "version": "0.5.2",
   },
-  "function-bind/1.1.1": Object {
+  "function-bind@1.1.1": Object {
     "integrity": "sha512-yIovAzMX49sF8Yl58fSCWJ5svSLuaibPxXQJFLmBObTuCr0Mf1KiPopGM9NiFjiYBCbfaa2Fh6breQ6ANVTI0A==",
     "resolved": "https://registry.npmjs.org/function-bind/-/function-bind-1.1.1.tgz",
     "version": "1.1.1",
   },
-  "get-intrinsic/1.1.2": Object {
+  "get-intrinsic@1.1.2": Object {
     "dependencies": Object {
       "function-bind": "1.1.1",
       "has": "1.0.3",
@@ -534,12 +534,12 @@ Object {
     "resolved": "https://registry.npmjs.org/get-intrinsic/-/get-intrinsic-1.1.2.tgz",
     "version": "1.1.2",
   },
-  "has-symbols/1.0.3": Object {
+  "has-symbols@1.0.3": Object {
     "integrity": "sha512-l3LCuF6MgDNwTDKkdYGEihYjt5pRPbEg46rtlmnSPlUbgmB8LOIrKJbYYFBSbnPaJexMKtiPO8hmeRjRz2Td+A==",
     "resolved": "https://registry.npmjs.org/has-symbols/-/has-symbols-1.0.3.tgz",
     "version": "1.0.3",
   },
-  "has/1.0.3": Object {
+  "has@1.0.3": Object {
     "dependencies": Object {
       "function-bind": "1.1.1",
     },
@@ -547,7 +547,7 @@ Object {
     "resolved": "https://registry.npmjs.org/has/-/has-1.0.3.tgz",
     "version": "1.0.3",
   },
-  "http-errors/2.0.0": Object {
+  "http-errors@2.0.0": Object {
     "dependencies": Object {
       "depd": "2.0.0",
       "inherits": "2.0.4",
@@ -559,7 +559,7 @@ Object {
     "resolved": "https://registry.npmjs.org/http-errors/-/http-errors-2.0.0.tgz",
     "version": "2.0.0",
   },
-  "iconv-lite/0.4.24": Object {
+  "iconv-lite@0.4.24": Object {
     "dependencies": Object {
       "safer-buffer": "2.1.2",
     },
@@ -567,27 +567,27 @@ Object {
     "resolved": "https://registry.npmjs.org/iconv-lite/-/iconv-lite-0.4.24.tgz",
     "version": "0.4.24",
   },
-  "inherits/2.0.4": Object {
+  "inherits@2.0.4": Object {
     "integrity": "sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==",
     "resolved": "https://registry.npmjs.org/inherits/-/inherits-2.0.4.tgz",
     "version": "2.0.4",
   },
-  "ipaddr.js/1.9.1": Object {
+  "ipaddr.js@1.9.1": Object {
     "integrity": "sha512-0KI/607xoxSToH7GjN1FfSbLoU0+btTicjsQSWQlh/hZykN8KpmMf7uYwPW3R+akZ6R/w18ZlXSHBYXiYUPO3g==",
     "resolved": "https://registry.npmjs.org/ipaddr.js/-/ipaddr.js-1.9.1.tgz",
     "version": "1.9.1",
   },
-  "js-tokens/4.0.0": Object {
+  "js-tokens@4.0.0": Object {
     "integrity": "sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==",
     "resolved": "https://registry.npmjs.org/js-tokens/-/js-tokens-4.0.0.tgz",
     "version": "4.0.0",
   },
-  "lodash/4.17.21": Object {
+  "lodash@4.17.21": Object {
     "integrity": "sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==",
     "resolved": "https://registry.npmjs.org/lodash/-/lodash-4.17.21.tgz",
     "version": "4.17.21",
   },
-  "loose-envify/1.4.0": Object {
+  "loose-envify@1.4.0": Object {
     "dependencies": Object {
       "js-tokens": "4.0.0",
     },
@@ -595,7 +595,7 @@ Object {
     "resolved": "https://registry.npmjs.org/loose-envify/-/loose-envify-1.4.0.tgz",
     "version": "1.4.0",
   },
-  "magic-string/0.25.9": Object {
+  "magic-string@0.25.9": Object {
     "dependencies": Object {
       "sourcemap-codec": "1.4.8",
     },
@@ -603,27 +603,27 @@ Object {
     "resolved": "https://registry.npmjs.org/magic-string/-/magic-string-0.25.9.tgz",
     "version": "0.25.9",
   },
-  "media-typer/0.3.0": Object {
+  "media-typer@0.3.0": Object {
     "integrity": "sha512-dq+qelQ9akHpcOl/gUVRTxVIOkAJ1wR3QAvb4RsVjS8oVoFjDGTc679wJYmUmknUF5HwMLOgb5O+a3KxfWapPQ==",
     "resolved": "https://registry.npmjs.org/media-typer/-/media-typer-0.3.0.tgz",
     "version": "0.3.0",
   },
-  "merge-descriptors/1.0.1": Object {
+  "merge-descriptors@1.0.1": Object {
     "integrity": "sha512-cCi6g3/Zr1iqQi6ySbseM1Xvooa98N0w31jzUYrXPX2xqObmFGHJ0tQ5u74H3mVh7wLouTseZyYIq39g8cNp1w==",
     "resolved": "https://registry.npmjs.org/merge-descriptors/-/merge-descriptors-1.0.1.tgz",
     "version": "1.0.1",
   },
-  "methods/1.1.2": Object {
+  "methods@1.1.2": Object {
     "integrity": "sha512-iclAHeNqNm68zFtnZ0e+1L2yUIdvzNoauKU4WBA3VvH/vPFieF7qfRlwUZU+DA9P9bPXIS90ulxoUoCH23sV2w==",
     "resolved": "https://registry.npmjs.org/methods/-/methods-1.1.2.tgz",
     "version": "1.1.2",
   },
-  "mime-db/1.52.0": Object {
+  "mime-db@1.52.0": Object {
     "integrity": "sha512-sPU4uV7dYlvtWJxwwxHD0PuihVNiE7TyAbQ5SWxDCB9mUYvOgroQOwYQQOKPJ8CIbE+1ETVlOoK1UC2nU3gYvg==",
     "resolved": "https://registry.npmjs.org/mime-db/-/mime-db-1.52.0.tgz",
     "version": "1.52.0",
   },
-  "mime-types/2.1.35": Object {
+  "mime-types@2.1.35": Object {
     "dependencies": Object {
       "mime-db": "1.52.0",
     },
@@ -631,42 +631,42 @@ Object {
     "resolved": "https://registry.npmjs.org/mime-types/-/mime-types-2.1.35.tgz",
     "version": "2.1.35",
   },
-  "mime/1.6.0": Object {
+  "mime@1.6.0": Object {
     "integrity": "sha512-x0Vn8spI+wuJ1O6S7gnbaQg8Pxh4NNHb7KSINmEWKiPE4RKOplvijn+NkmYmmRgP68mc70j2EbeTFRsrswaQeg==",
     "resolved": "https://registry.npmjs.org/mime/-/mime-1.6.0.tgz",
     "version": "1.6.0",
   },
-  "moment/2.29.4": Object {
+  "moment@2.29.4": Object {
     "integrity": "sha512-5LC9SOxjSc2HF6vO2CyuTDNivEdoz2IvyJJGj6X8DJ0eFyfszE0QiEd+iXmBvUP3WHxSjFH/vIsA0EN00cgr8w==",
     "resolved": "https://registry.npmjs.org/moment/-/moment-2.29.4.tgz",
     "version": "2.29.4",
   },
-  "ms/2.0.0": Object {
+  "ms@2.0.0": Object {
     "integrity": "sha512-Tpp60P6IUJDTuOq/5Z8cdskzJujfwqfOTkrwIwj7IRISpnkJnT6SyJ4PCPnGMoFjC9ddhal5KVIYtAt97ix05A==",
     "resolved": "https://registry.npmjs.org/ms/-/ms-2.0.0.tgz",
     "version": "2.0.0",
   },
-  "ms/2.1.3": Object {
+  "ms@2.1.3": Object {
     "integrity": "sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==",
     "resolved": "https://registry.npmjs.org/ms/-/ms-2.1.3.tgz",
     "version": "2.1.3",
   },
-  "nanoid/3.3.4": Object {
+  "nanoid@3.3.4": Object {
     "integrity": "sha512-MqBkQh/OHTS2egovRtLk45wEyNXwF+cokD+1YPf9u5VfJiRdAiRwB2froX5Co9Rh20xs4siNPm8naNotSD6RBw==",
     "resolved": "https://registry.npmjs.org/nanoid/-/nanoid-3.3.4.tgz",
     "version": "3.3.4",
   },
-  "negotiator/0.6.3": Object {
+  "negotiator@0.6.3": Object {
     "integrity": "sha512-+EUsqGPLsM+j/zdChZjsnX51g4XrHFOIXwfnCVPGlQk/k5giakcKsuxCObBRu6DSm9opw/O6slWbJdghQM4bBg==",
     "resolved": "https://registry.npmjs.org/negotiator/-/negotiator-0.6.3.tgz",
     "version": "0.6.3",
   },
-  "object-inspect/1.12.2": Object {
+  "object-inspect@1.12.2": Object {
     "integrity": "sha512-z+cPxW0QGUp0mcqcsgQyLVRDoXFQbXOwBaqyF7VIgI4TWNQsDHrBpUQslRmIfAoYWdYzs6UlKJtB2XJpTaNSpQ==",
     "resolved": "https://registry.npmjs.org/object-inspect/-/object-inspect-1.12.2.tgz",
     "version": "1.12.2",
   },
-  "on-finished/2.4.1": Object {
+  "on-finished@2.4.1": Object {
     "dependencies": Object {
       "ee-first": "1.1.1",
     },
@@ -674,22 +674,22 @@ Object {
     "resolved": "https://registry.npmjs.org/on-finished/-/on-finished-2.4.1.tgz",
     "version": "2.4.1",
   },
-  "parseurl/1.3.3": Object {
+  "parseurl@1.3.3": Object {
     "integrity": "sha512-CiyeOxFT/JZyN5m0z9PfXw4SCBJ6Sygz1Dpl0wqjlhDEGGBP1GnsUVEL0p63hoG1fcj3fHynXi9NYO4nWOL+qQ==",
     "resolved": "https://registry.npmjs.org/parseurl/-/parseurl-1.3.3.tgz",
     "version": "1.3.3",
   },
-  "path-to-regexp/0.1.7": Object {
+  "path-to-regexp@0.1.7": Object {
     "integrity": "sha512-5DFkuoqlv1uYQKxy8omFBeJPQcdoE07Kv2sferDCrAq1ohOU+MSDswDIbnx3YAM60qIOnYa53wBhXW0EbMonrQ==",
     "resolved": "https://registry.npmjs.org/path-to-regexp/-/path-to-regexp-0.1.7.tgz",
     "version": "0.1.7",
   },
-  "picocolors/1.0.0": Object {
+  "picocolors@1.0.0": Object {
     "integrity": "sha512-1fygroTLlHu66zi26VoTDv8yRgm0Fccecssto+MhsZ0D/DGW2sm8E8AjW7NU5VVTRt5GxbeZ5qBuJr+HyLYkjQ==",
     "resolved": "https://registry.npmjs.org/picocolors/-/picocolors-1.0.0.tgz",
     "version": "1.0.0",
   },
-  "postcss/8.4.14": Object {
+  "postcss@8.4.14": Object {
     "dependencies": Object {
       "nanoid": "3.3.4",
       "picocolors": "1.0.0",
@@ -699,7 +699,7 @@ Object {
     "resolved": "https://registry.npmjs.org/postcss/-/postcss-8.4.14.tgz",
     "version": "8.4.14",
   },
-  "proxy-addr/2.0.7": Object {
+  "proxy-addr@2.0.7": Object {
     "dependencies": Object {
       "forwarded": "0.2.0",
       "ipaddr.js": "1.9.1",
@@ -708,7 +708,7 @@ Object {
     "resolved": "https://registry.npmjs.org/proxy-addr/-/proxy-addr-2.0.7.tgz",
     "version": "2.0.7",
   },
-  "qs/6.10.3": Object {
+  "qs@6.10.3": Object {
     "dependencies": Object {
       "side-channel": "1.0.4",
     },
@@ -716,12 +716,12 @@ Object {
     "resolved": "https://registry.npmjs.org/qs/-/qs-6.10.3.tgz",
     "version": "6.10.3",
   },
-  "range-parser/1.2.1": Object {
+  "range-parser@1.2.1": Object {
     "integrity": "sha512-Hrgsx+orqoygnmhFbKaHE6c296J+HTAQXoxEF6gNupROmmGJRoyzfG3ccAveqCBrwr/2yxQ5BVd/GTl5agOwSg==",
     "resolved": "https://registry.npmjs.org/range-parser/-/range-parser-1.2.1.tgz",
     "version": "1.2.1",
   },
-  "raw-body/2.5.1": Object {
+  "raw-body@2.5.1": Object {
     "dependencies": Object {
       "bytes": "3.1.2",
       "http-errors": "2.0.0",
@@ -732,7 +732,7 @@ Object {
     "resolved": "https://registry.npmjs.org/raw-body/-/raw-body-2.5.1.tgz",
     "version": "2.5.1",
   },
-  "react-dom/18.2.0_react@18.2.0": Object {
+  "react-dom@18.2.0": Object {
     "dependencies": Object {
       "loose-envify": "1.4.0",
       "react": "18.2.0",
@@ -742,7 +742,7 @@ Object {
     "resolved": "https://registry.npmjs.org/react-dom/-/react-dom-18.2.0.tgz",
     "version": "18.2.0",
   },
-  "react/18.2.0": Object {
+  "react@18.2.0": Object {
     "dependencies": Object {
       "loose-envify": "1.4.0",
     },
@@ -750,17 +750,17 @@ Object {
     "resolved": "https://registry.npmjs.org/react/-/react-18.2.0.tgz",
     "version": "18.2.0",
   },
-  "safe-buffer/5.2.1": Object {
+  "safe-buffer@5.2.1": Object {
     "integrity": "sha512-rp3So07KcdmmKbGvgaNxQSJr7bGVSVk5S9Eq1F+ppbRo70+YeaDxkw5Dd8NPN+GD6bjnYm2VuPuCXmpuYvmCXQ==",
     "resolved": "https://registry.npmjs.org/safe-buffer/-/safe-buffer-5.2.1.tgz",
     "version": "5.2.1",
   },
-  "safer-buffer/2.1.2": Object {
+  "safer-buffer@2.1.2": Object {
     "integrity": "sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==",
     "resolved": "https://registry.npmjs.org/safer-buffer/-/safer-buffer-2.1.2.tgz",
     "version": "2.1.2",
   },
-  "scheduler/0.23.0": Object {
+  "scheduler@0.23.0": Object {
     "dependencies": Object {
       "loose-envify": "1.4.0",
     },
@@ -768,7 +768,7 @@ Object {
     "resolved": "https://registry.npmjs.org/scheduler/-/scheduler-0.23.0.tgz",
     "version": "0.23.0",
   },
-  "send/0.18.0": Object {
+  "send@0.18.0": Object {
     "dependencies": Object {
       "debug": "2.6.9",
       "depd": "2.0.0",
@@ -788,7 +788,7 @@ Object {
     "resolved": "https://registry.npmjs.org/send/-/send-0.18.0.tgz",
     "version": "0.18.0",
   },
-  "serve-static/1.15.0": Object {
+  "serve-static@1.15.0": Object {
     "dependencies": Object {
       "encodeurl": "1.0.2",
       "escape-html": "1.0.3",
@@ -799,12 +799,12 @@ Object {
     "resolved": "https://registry.npmjs.org/serve-static/-/serve-static-1.15.0.tgz",
     "version": "1.15.0",
   },
-  "setprototypeof/1.2.0": Object {
+  "setprototypeof@1.2.0": Object {
     "integrity": "sha512-E5LDX7Wrp85Kil5bhZv46j8jOeboKq5JMmYM3gVGdGH8xFpPWXUMsNrlODCrkoxMEeNi/XZIwuRvY4XNwYMJpw==",
     "resolved": "https://registry.npmjs.org/setprototypeof/-/setprototypeof-1.2.0.tgz",
     "version": "1.2.0",
   },
-  "side-channel/1.0.4": Object {
+  "side-channel@1.0.4": Object {
     "dependencies": Object {
       "call-bind": "1.0.2",
       "get-intrinsic": "1.1.2",
@@ -814,42 +814,42 @@ Object {
     "resolved": "https://registry.npmjs.org/side-channel/-/side-channel-1.0.4.tgz",
     "version": "1.0.4",
   },
-  "source-map-js/1.0.2": Object {
+  "source-map-js@1.0.2": Object {
     "integrity": "sha512-R0XvVJ9WusLiqTCEiGCmICCMplcCkIwwR11mOSD9CR5u+IXYdiseeEuXCVAjS54zqwkLcPNnmU4OeJ6tUrWhDw==",
     "resolved": "https://registry.npmjs.org/source-map-js/-/source-map-js-1.0.2.tgz",
     "version": "1.0.2",
   },
-  "source-map/0.6.1": Object {
+  "source-map@0.6.1": Object {
     "integrity": "sha512-UjgapumWlbMhkBgzT7Ykc5YXUT46F0iKu8SGXq0bcwP5dz/h0Plj6enJqjz1Zbq2l5WaqYnrVbwWOWMyF3F47g==",
     "resolved": "https://registry.npmjs.org/source-map/-/source-map-0.6.1.tgz",
     "version": "0.6.1",
   },
-  "sourcemap-codec/1.4.8": Object {
+  "sourcemap-codec@1.4.8": Object {
     "integrity": "sha512-9NykojV5Uih4lgo5So5dtw+f0JgJX30KCNI8gwhz2J9A15wD0Ml6tjHKwf6fTSa6fAdVBdZeNOs9eJ71qCk8vA==",
     "resolved": "https://registry.npmjs.org/sourcemap-codec/-/sourcemap-codec-1.4.8.tgz",
     "version": "1.4.8",
   },
-  "statuses/2.0.1": Object {
+  "statuses@2.0.1": Object {
     "integrity": "sha512-RwNA9Z/7PrK06rYLIzFMlaF+l73iwpzsqRIFgbMLbTcLD6cOao82TaWefPXQvB2fOC4AjuYSEndS7N/mTCbkdQ==",
     "resolved": "https://registry.npmjs.org/statuses/-/statuses-2.0.1.tgz",
     "version": "2.0.1",
   },
-  "to-fast-properties/2.0.0": Object {
+  "to-fast-properties@2.0.0": Object {
     "integrity": "sha512-/OaKK0xYrs3DmxRYqL/yDc+FxFUVYhDlXMhRmv3z915w2HF1tnN1omB354j8VUGO/hbRzyD6Y3sA7v7GS/ceog==",
     "resolved": "https://registry.npmjs.org/to-fast-properties/-/to-fast-properties-2.0.0.tgz",
     "version": "2.0.0",
   },
-  "toidentifier/1.0.1": Object {
+  "toidentifier@1.0.1": Object {
     "integrity": "sha512-o5sSPKEkg/DIQNmH43V0/uerLrpzVedkUh8tGNvaeXpfpuwjKenlSox/2O/BTlZUtEe+JG7s5YhEz608PlAHRA==",
     "resolved": "https://registry.npmjs.org/toidentifier/-/toidentifier-1.0.1.tgz",
     "version": "1.0.1",
   },
-  "tslib/2.4.0": Object {
+  "tslib@2.4.0": Object {
     "integrity": "sha512-d6xOpEDfsi2CZVlPQzGeux8XMwLT9hssAsaPYExaQMuYskwb+x1x7J371tWlbBdWHroy99KnVB6qIkUbs5X3UQ==",
     "resolved": "https://registry.npmjs.org/tslib/-/tslib-2.4.0.tgz",
     "version": "2.4.0",
   },
-  "type-is/1.6.18": Object {
+  "type-is@1.6.18": Object {
     "dependencies": Object {
       "media-typer": "0.3.0",
       "mime-types": "2.1.35",
@@ -858,22 +858,22 @@ Object {
     "resolved": "https://registry.npmjs.org/type-is/-/type-is-1.6.18.tgz",
     "version": "1.6.18",
   },
-  "unpipe/1.0.0": Object {
+  "unpipe@1.0.0": Object {
     "integrity": "sha512-pjy2bYhSsufwWlKwPc+l3cN7+wuJlK6uz0YdJEOlQDbl6jo/YlPi4mb8agUkVC8BF7V8NuzeyPNqRksA3hztKQ==",
     "resolved": "https://registry.npmjs.org/unpipe/-/unpipe-1.0.0.tgz",
     "version": "1.0.0",
   },
-  "utils-merge/1.0.1": Object {
+  "utils-merge@1.0.1": Object {
     "integrity": "sha512-pMZTvIkT1d+TFGvDOqodOclx0QWkkgi6Tdoa8gC8ffGAAqz9pzPTZWAybbsHHoED/ztMtkv/VoYTYyShUn81hA==",
     "resolved": "https://registry.npmjs.org/utils-merge/-/utils-merge-1.0.1.tgz",
     "version": "1.0.1",
   },
-  "vary/1.1.2": Object {
+  "vary@1.1.2": Object {
     "integrity": "sha512-BNGbWLfd0eUPabhkXUVm0j8uuvREyTh5ovRa/dyow/BqAbZJyC+5fU+IzQOzmAKzYqYRAISoRhdQr3eIZ/PXqg==",
     "resolved": "https://registry.npmjs.org/vary/-/vary-1.1.2.tgz",
     "version": "1.1.2",
   },
-  "vue/3.2.37": Object {
+  "vue@3.2.37": Object {
     "dependencies": Object {
       "@vue/compiler-dom": "3.2.37",
       "@vue/compiler-sfc": "3.2.37",
@@ -890,11 +890,7 @@ Object {
 
 exports[`with-registry 1`] = `
 Object {
-  "github.com/zkochan/hi/4cdebec76b7b9d1f6e219e06c42d92a6b8ea60cd": Object {
-    "resolved": "https://codeload.github.com/zkochan/hi/tar.gz/4cdebec76b7b9d1f6e219e06c42d92a6b8ea60cd",
-    "version": "1.0.0",
-  },
-  "has-aliased-git-dependency/1.0.0": Object {
+  "has-aliased-git-dependency@1.0.0": Object {
     "dependencies": Object {
       "has-say-hi-peer": "1.0.0_hi@1.0.0",
       "say-hi": "github.com/zkochan/hi/4cdebec76b7b9d1f6e219e06c42d92a6b8ea60cd",
@@ -903,12 +899,16 @@ Object {
     "resolved": "http://localhost:4873/has-aliased-git-dependency/-/has-aliased-git-dependency-1.0.0.tgz",
     "version": "1.0.0",
   },
-  "has-say-hi-peer/1.0.0_hi@1.0.0": Object {
+  "has-say-hi-peer@1.0.0": Object {
     "dependencies": Object {
       "say-hi": "github.com/zkochan/hi/4cdebec76b7b9d1f6e219e06c42d92a6b8ea60cd",
     },
     "integrity": "sha512-BU67ThwxbR5IlWt+MWEgdr54p3TCvtp//nggAxZRnt7/RsYN9Vqqsfv1oAq1Z6fgYJRWoFb6/bUGOtrtAs4coA==",
     "resolved": "http://localhost:4873/has-say-hi-peer/-/has-say-hi-peer-1.0.0.tgz",
+    "version": "1.0.0",
+  },
+  "hi@1.0.0": Object {
+    "resolved": "https://codeload.github.com/zkochan/hi/tar.gz/4cdebec76b7b9d1f6e219e06c42d92a6b8ea60cd",
     "version": "1.0.0",
   },
 }
