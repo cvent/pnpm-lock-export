@@ -10,11 +10,10 @@ export async function convert(lockfileDir: string): Promise<YarnLock> {
 
   return Object.fromEntries(
     Object.entries(lock.packages ?? {}).map(([depPath, snapshot]) => {
-      const { version } = nameVerFromPkgSnapshot(depPath, snapshot);
       const resolution = pkgSnapshotToResolution(depPath, snapshot, { default: 'https://registry.npmjs.org/' });
 
       const pkg: Package = {
-        version,
+        version: nameVerFromPkgSnapshot(depPath, snapshot).version,
         resolved: (resolution as TarballResolution).tarball,
       };
 
@@ -23,7 +22,7 @@ export async function convert(lockfileDir: string): Promise<YarnLock> {
 
       if (snapshot.dependencies) pkg.dependencies = snapshot.dependencies;
 
-      return [depPath.slice(1), pkg];
+      return [depPath.startsWith('/') ? depPath.slice(1) : depPath, pkg];
     })
   );
 }

@@ -41,6 +41,10 @@ Object {
     "resolved": "https://registry.npmjs.org/get-stream/-/get-stream-6.0.1.tgz",
     "version": "6.0.1",
   },
+  "github.com/lodash/lodash/2da024c3b4f9947a48517639de7560457cd4ec6c": Object {
+    "resolved": "https://codeload.github.com/lodash/lodash/tar.gz/2da024c3b4f9947a48517639de7560457cd4ec6c",
+    "version": "5.0.0",
+  },
   "human-signals/2.1.0": Object {
     "integrity": "sha512-B4FFZ6q/T2jhhksgkbEW3HBvWIfDW85snkQgawt07S7J5QXTk6BkNV+0yAeZrM5QpMAdYlocGoljn0sJ/WQkFw==",
     "resolved": "https://registry.npmjs.org/human-signals/-/human-signals-2.1.0.tgz",
@@ -55,10 +59,6 @@ Object {
     "integrity": "sha512-RHxMLp9lnKHGHRng9QFhRCMbYAcVpn69smSGcq3f36xjgVVWThj4qqLbTLlq7Ssj8B+fIQ1EuCEGI2lKsyQeIw==",
     "resolved": "https://registry.npmjs.org/isexe/-/isexe-2.0.0.tgz",
     "version": "2.0.0",
-  },
-  "ithub.com/lodash/lodash/2da024c3b4f9947a48517639de7560457cd4ec6c": Object {
-    "resolved": "https://codeload.github.com/lodash/lodash/tar.gz/2da024c3b4f9947a48517639de7560457cd4ec6c",
-    "version": "5.0.0",
   },
   "js-tokens/4.0.0": Object {
     "integrity": "sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==",
@@ -890,6 +890,10 @@ Object {
 
 exports[`with-registry 1`] = `
 Object {
+  "github.com/zkochan/hi/4cdebec76b7b9d1f6e219e06c42d92a6b8ea60cd": Object {
+    "resolved": "https://codeload.github.com/zkochan/hi/tar.gz/4cdebec76b7b9d1f6e219e06c42d92a6b8ea60cd",
+    "version": "1.0.0",
+  },
   "has-aliased-git-dependency/1.0.0": Object {
     "dependencies": Object {
       "has-say-hi-peer": "1.0.0_hi@1.0.0",
@@ -905,10 +909,6 @@ Object {
     },
     "integrity": "sha512-BU67ThwxbR5IlWt+MWEgdr54p3TCvtp//nggAxZRnt7/RsYN9Vqqsfv1oAq1Z6fgYJRWoFb6/bUGOtrtAs4coA==",
     "resolved": "http://localhost:4873/has-say-hi-peer/-/has-say-hi-peer-1.0.0.tgz",
-    "version": "1.0.0",
-  },
-  "ithub.com/zkochan/hi/4cdebec76b7b9d1f6e219e06c42d92a6b8ea60cd": Object {
-    "resolved": "https://codeload.github.com/zkochan/hi/tar.gz/4cdebec76b7b9d1f6e219e06c42d92a6b8ea60cd",
     "version": "1.0.0",
   },
 }

@@ -1,6 +1,6 @@
 {
   "name": "@cvent/pnpm-lock-export",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "A utility for converting pnpm-lock.yaml to other lockfile formats",
   "main": "dist/src/index.js",
   "files": [
