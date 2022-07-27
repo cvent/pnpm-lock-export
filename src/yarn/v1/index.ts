@@ -1,9 +1,11 @@
+import { writeFile } from 'fs/promises';
+import path from 'path';
+
 import type { TarballResolution } from '@pnpm/lockfile-types';
 import { nameVerFromPkgSnapshot, pkgSnapshotToResolution } from '@pnpm/lockfile-utils';
 
 import type { Package, YarnLock } from './types';
 import { depPathFromDependency, parseLockfile } from '../../pnpm';
-import { writeFile } from 'fs/promises';
 
 export async function convert(lockfileDir: string): Promise<YarnLock> {
   const lock = await parseLockfile(lockfileDir);
@@ -63,5 +65,5 @@ export function serialize(lock: YarnLock): string {
 export async function write(lockfileDir: string): Promise<void> {
   await convert(lockfileDir)
     .then(serialize)
-    .then((lock) => writeFile('yarn.lock', lock));
+    .then((lock) => writeFile(path.join(lockfileDir, 'yarn.lock'), lock));
 }

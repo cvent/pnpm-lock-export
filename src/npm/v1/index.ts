@@ -1,4 +1,5 @@
 import { writeFile } from 'fs/promises';
+import path from 'path';
 
 import { readProjectManifestOnly } from '@pnpm/read-project-manifest';
 import type { PackageSnapshot, PackageSnapshots, TarballResolution } from '@pnpm/lockfile-types';
@@ -7,6 +8,7 @@ import { parse as parseDepPath } from 'dependency-path';
 
 import type { Dependencies, Dependency, PackageLock } from './types';
 import { parseLockfile } from '../../pnpm';
+
 
 export async function convert(lockfileDir: string): Promise<PackageLock> {
   const lock = await parseLockfile(lockfileDir);
@@ -41,7 +43,7 @@ export function serialize(lock: PackageLock): string {
 export async function write(lockfileDir: string): Promise<void> {
   await convert(lockfileDir)
     .then(serialize)
-    .then((lock) => writeFile('package-lock.json', lock));
+    .then((lock) => writeFile(path.join(lockfileDir, 'package-lock.json'), lock));
 }
 
 interface NamedDependency extends Dependency {
