@@ -1,10 +1,4 @@
-import {
-  getLockfileImporterId,
-  Lockfile,
-  ProjectSnapshot,
-  readWantedLockfile,
-  writeWantedLockfile,
-} from '@pnpm/lockfile-file';
+import { getLockfileImporterId, Lockfile, ProjectSnapshot, readWantedLockfile } from '@pnpm/lockfile-file';
 import { parse as parseDepPath } from 'dependency-path';
 import { DEPENDENCIES_FIELDS } from '@pnpm/types';
 import { pruneSharedLockfile } from '@pnpm/prune-lockfile';
@@ -49,7 +43,7 @@ export async function workspaceProjectPaths(lockfileDir: string): Promise<Set<st
 }
 
 // From https://github.com/pnpm/pnpm/blob/main/packages/make-dedicated-lockfile/src/index.ts
-export async function makeDedicatedLockfile(lockfileDir: string, projectDir: string): Promise<void> {
+export async function dedicatedLockfile(lockfileDir: string, projectDir: string): Promise<Lockfile> {
   const lockfile = await parseLockfile(lockfileDir);
 
   const allImporters = lockfile.importers;
@@ -65,9 +59,8 @@ export async function makeDedicatedLockfile(lockfileDir: string, projectDir: str
       lockfile.importers['.'] = projectSnapshotWithoutLinkedDeps(importer);
     }
   }
-  const dedicatedLockfile = pruneSharedLockfile(lockfile);
 
-  await writeWantedLockfile(projectDir, dedicatedLockfile);
+  return pruneSharedLockfile(lockfile);
 }
 
 // From https://github.com/pnpm/pnpm/blob/main/packages/make-dedicated-lockfile/src/index.ts

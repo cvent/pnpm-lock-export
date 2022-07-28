@@ -16,6 +16,7 @@ specifiers:
   '@types/argparse': ^2.0.10
   '@types/jest': ^28.1.6
   '@types/node': ^16
+  '@types/semver': ^7.3.10
   '@typescript-eslint/eslint-plugin': ^5.31.0
   '@typescript-eslint/parser': ^5.31.0
   argparse: ^2.0.1
@@ -23,6 +24,7 @@ specifiers:
   eslint: ^8.20.0
   jest: ^28.1.3
   prettier: ^2.7.1
+  semver: ^7.3.7
   tmp-promise: ^3.0.3
   typescript: ^4.7.4
 
@@ -36,6 +38,7 @@ dependencies:
   '@pnpm/types': 8.4.0
   argparse: 2.0.1
   dependency-path: 9.2.3
+  semver: 7.3.7
 
 devDependencies:
   '@pnpm/lockfile-types': 4.2.0
@@ -46,6 +49,7 @@ devDependencies:
   '@types/argparse': 2.0.10
   '@types/jest': 28.1.6
   '@types/node': 16.11.45
+  '@types/semver': 7.3.10
   '@typescript-eslint/eslint-plugin': 5.31.0_d5zwcxr4bwkhmuo464cb3a2puu
   '@typescript-eslint/parser': 5.31.0_he2ccbldppg44uulnyq4rwocfa
   eslint: 8.20.0
@@ -1162,6 +1166,10 @@ packages:
 
   /@types/prettier/2.6.3:
     resolution: {integrity: sha512-ymZk3LEC/fsut+/Q5qejp6R9O1rMxz3XaRHDV6kX8MrGAhOSPqVARbDi+EZvInBpw+BnCX3TD240byVkOfQsHg==}
+    dev: true
+
+  /@types/semver/7.3.10:
+    resolution: {integrity: sha512-zsv3fsC7S84NN6nPK06u79oWgrPVd0NvOyqgghV1haPaFcVxIrP4DLomRwGAXk0ui4HZA7mOcSFL98sMVW9viw==}
     dev: true
 
   /@types/stack-utils/2.0.1:
