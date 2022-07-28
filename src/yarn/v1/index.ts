@@ -5,7 +5,7 @@ import type { TarballResolution } from '@pnpm/lockfile-types';
 import { nameVerFromPkgSnapshot, pkgSnapshotToResolution } from '@pnpm/lockfile-utils';
 
 import type { Package, YarnLock } from './types';
-import { depPathFromDependency, parseLockfile } from '../../pnpm';
+import { depPathFromDependency, makeDedicatedLockfile, parseLockfile, workspaceProjectPaths } from '../../pnpm';
 
 export async function convert(lockfileDir: string): Promise<YarnLock> {
   const lock = await parseLockfile(lockfileDir);
@@ -66,4 +66,18 @@ export async function write(lockfileDir: string): Promise<void> {
   await convert(lockfileDir)
     .then(serialize)
     .then((lock) => writeFile(path.join(lockfileDir, 'yarn.lock'), lock));
+}
+
+export async function writeRecursive(lockfileDir: string): Promise<void> {
+  const packages = await workspaceProjectPaths(lockfileDir);
+
+  // Make and convert lockfiles for workspace packages,
+  // and dedicated lockfiles for all workspace packages
+  await Promise.all([
+    write(lockfileDir),
+    ...Array.from(packages).map(async (pkgDir) => {
+      await makeDedicatedLockfile(lockfileDir, pkgDir);
+      await write(pkgDir);
+    }),
+  ]);
 }
