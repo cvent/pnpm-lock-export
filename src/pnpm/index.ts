@@ -1,5 +1,14 @@
-import { Lockfile, readWantedLockfile } from '@pnpm/lockfile-file';
+import {
+  getLockfileImporterId,
+  Lockfile,
+  ProjectSnapshot,
+  readWantedLockfile,
+  writeWantedLockfile,
+} from '@pnpm/lockfile-file';
 import { parse as parseDepPath } from 'dependency-path';
+import { DEPENDENCIES_FIELDS } from '@pnpm/types';
+import { pruneSharedLockfile } from '@pnpm/prune-lockfile';
+import { getPackages } from '@manypkg/get-packages';
 
 const LATEST_SUPPORTED_PNPM_LOCK_VERSION = 5.4;
 
@@ -29,4 +38,48 @@ export function depPathFromDependency([name, version]: [string, string]): Return
   } catch {
     return parseDepPath(`/${name}/${version}`);
   }
+}
+
+export async function workspaceProjectPaths(lockfileDir: string): Promise<Set<string>> {
+  return new Set<string>(
+    await getPackages(lockfileDir).then(({ root, packages }) => {
+      return packages.map(({ dir }) => dir).filter((pkg) => pkg !== root.dir);
+    })
+  );
+}
+
+// From https://github.com/pnpm/pnpm/blob/main/packages/make-dedicated-lockfile/src/index.ts
+export async function makeDedicatedLockfile(lockfileDir: string, projectDir: string): Promise<void> {
+  const lockfile = await parseLockfile(lockfileDir);
+
+  const allImporters = lockfile.importers;
+  lockfile.importers = {};
+  const baseImporterId = getLockfileImporterId(lockfileDir, projectDir);
+  for (const [importerId, importer] of Object.entries(allImporters)) {
+    if (importerId.startsWith(`${baseImporterId}/`)) {
+      const newImporterId = importerId.slice(baseImporterId.length + 1);
+      lockfile.importers[newImporterId] = projectSnapshotWithoutLinkedDeps(importer);
+      continue;
+    }
+    if (importerId === baseImporterId) {
+      lockfile.importers['.'] = projectSnapshotWithoutLinkedDeps(importer);
+    }
+  }
+  const dedicatedLockfile = pruneSharedLockfile(lockfile);
+
+  await writeWantedLockfile(projectDir, dedicatedLockfile);
+}
+
+// From https://github.com/pnpm/pnpm/blob/main/packages/make-dedicated-lockfile/src/index.ts
+function projectSnapshotWithoutLinkedDeps(projectSnapshot: ProjectSnapshot) {
+  const newProjectSnapshot: ProjectSnapshot = {
+    specifiers: projectSnapshot.specifiers,
+  };
+  for (const depField of DEPENDENCIES_FIELDS) {
+    if (projectSnapshot[depField] == null) continue;
+    newProjectSnapshot[depField] = Object.fromEntries(
+      Object.entries(projectSnapshot[depField] ?? {}).filter((entry) => !entry[1].startsWith('link:'))
+    );
+  }
+  return newProjectSnapshot;
 }

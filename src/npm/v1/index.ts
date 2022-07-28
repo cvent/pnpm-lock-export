@@ -9,7 +9,6 @@ import { parse as parseDepPath } from 'dependency-path';
 import type { Dependencies, Dependency, PackageLock } from './types';
 import { parseLockfile } from '../../pnpm';
 
-
 export async function convert(lockfileDir: string): Promise<PackageLock> {
   const lock = await parseLockfile(lockfileDir);
 
