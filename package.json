@@ -1,6 +1,6 @@
 {
-  "name": "@cvent/pnpm-lock-export",
-  "version": "0.4.0",
+  "name": "@inaiat/pnpm-lock-export",
+  "version": "1.0.0",
   "description": "A utility for converting pnpm-lock.yaml to other lockfile formats",
   "main": "dist/src/index.js",
   "files": [
@@ -19,10 +19,13 @@
     "lint:fix": "eslint --fix . && prettier --write ."
   },
   "author": "Jonathan Morley <jmorley@cvent.com>",
+  "contributors": [
+    "Inaiat <inaiat@gmail.com>"
+  ],
   "license": "MIT",
   "dependencies": {
     "@manypkg/get-packages": "^2.1.0",
-    "@pnpm/lockfile-file": "^5.1.4",
+    "@pnpm/lockfile-file": "^8.0.0",
     "@pnpm/lockfile-utils": "^4.1.0",
     "@pnpm/logger": "^5.0.0",
     "@pnpm/prune-lockfile": "^4.0.12",
