@@ -4,7 +4,7 @@ import { DEPENDENCIES_FIELDS } from '@pnpm/types';
 import { pruneSharedLockfile } from '@pnpm/prune-lockfile';
 import { getPackages } from '@manypkg/get-packages';
 
-const LATEST_SUPPORTED_PNPM_LOCK_VERSION = 5.4;
+const LATEST_SUPPORTED_PNPM_LOCK_VERSION = 6.0;
 
 export async function parseLockfile(pkgPath: string): Promise<Lockfile> {
   const lock = await readWantedLockfile(pkgPath, { ignoreIncompatible: true });
@@ -27,10 +27,11 @@ export async function parseLockfile(pkgPath: string): Promise<Lockfile> {
  * This function normalizes them all to dep paths
  */
 export function depPathFromDependency([name, version]: [string, string]): ReturnType<typeof parseDepPath> {
+  const pathVersion: string = version.replace(/\(.*/, '');
   try {
     return parseDepPath(version);
   } catch {
-    return parseDepPath(`/${name}/${version}`);
+    return parseDepPath(`/${name}/${pathVersion}`);
   }
 }
 

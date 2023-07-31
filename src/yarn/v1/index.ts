@@ -63,7 +63,7 @@ export function serialize(lock: YarnLock): string {
 
       if (pkg.dependencies && Object.keys(pkg.dependencies).length) {
         const deps = Object.entries(pkg.dependencies)
-          .map(([k, v]) => `    "${k}" "${v}"`)
+          .map(([k, v]) => `    "${k}" "${v.replace(/\(.*/, '')}"`)
           .join('\n');
 
         acc += `  dependencies:\n${deps}\n`;
