@@ -25,7 +25,7 @@
     "@pnpm/lockfile-file": "^5.1.4",
     "@pnpm/lockfile-utils": "^4.1.0",
     "@pnpm/logger": "^4.0.0",
-    "@pnpm/prune-lockfile": "^4.0.12",
+    "@pnpm/prune-lockfile": "^4.0.24",
     "@pnpm/read-project-manifest": "^3.0.6",
     "@pnpm/types": "^8.4.0",
     "argparse": "^2.0.1",
