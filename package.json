@@ -29,7 +29,7 @@
     "@pnpm/read-project-manifest": "^3.0.6",
     "@pnpm/types": "^8.4.0",
     "argparse": "^2.0.1",
-    "dependency-path": "^9.2.3",
+    "dependency-path": "^9.2.8",
     "semver": "^7.3.7"
   },
   "devDependencies": {
