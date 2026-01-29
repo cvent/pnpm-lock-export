@@ -33,7 +33,7 @@
     "semver": "^7.3.7"
   },
   "devDependencies": {
-    "@pnpm/lockfile-types": "^4.2.0",
+    "@pnpm/lockfile-types": "^4.3.6",
     "@pnpm/registry-mock": "^2.20.0",
     "@swc/core": "^1.2.218",
     "@swc/jest": "^0.2.22",
