@@ -27,7 +27,7 @@
     "@pnpm/logger": "^4.0.0",
     "@pnpm/prune-lockfile": "^4.0.12",
     "@pnpm/read-project-manifest": "^3.0.6",
-    "@pnpm/types": "^8.4.0",
+    "@pnpm/types": "^8.10.0",
     "argparse": "^2.0.1",
     "dependency-path": "^9.2.3",
     "semver": "^7.3.7"
