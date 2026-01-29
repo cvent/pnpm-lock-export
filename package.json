@@ -40,7 +40,7 @@
     "@tsconfig/node16-strictest": "^1.0.0",
     "@types/argparse": "^2.0.10",
     "@types/jest": "^28.1.6",
-    "@types/node": "^16",
+    "@types/node": "^16.18.126",
     "@types/semver": "^7.3.10",
     "@typescript-eslint/eslint-plugin": "^5.31.0",
     "@typescript-eslint/parser": "^5.31.0",
