@@ -35,8 +35,8 @@
   "devDependencies": {
     "@pnpm/lockfile-types": "^4.2.0",
     "@pnpm/registry-mock": "^2.20.0",
-    "@swc/core": "^1.2.218",
-    "@swc/jest": "^0.2.22",
+    "@swc/core": "^1.15.17",
+    "@swc/jest": "^0.2.39",
     "@tsconfig/node16-strictest": "^1.0.0",
     "@types/argparse": "^2.0.10",
     "@types/jest": "^28.1.6",
