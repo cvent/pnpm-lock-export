@@ -2,7 +2,7 @@
   "name": "top-10",
   "version": "1.0.0",
   "dependencies": {
-    "lodash": "4.17.21",
+    "lodash": "4.18.1",
     "react": "18.2.0",
     "tslib": "2.4.0",
     "chalk": "5.0.1",
