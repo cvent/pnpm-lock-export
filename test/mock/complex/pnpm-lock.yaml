@@ -5,12 +5,12 @@ importers:
   .:
     specifiers:
       execa: npm:safe-execa@0.1.2
-      lodash: github:lodash/lodash#2da024c3b4f9947a48517639de7560457cd4ec6c
+      lodash: github:lodash/lodash#9429a4ee03056e5b7be9a85a54571d7630f05983
       simple: workspace:*
       top-10: link:../top-10
     dependencies:
       execa: /safe-execa/0.1.2
-      lodash: github.com/lodash/lodash/2da024c3b4f9947a48517639de7560457cd4ec6c
+      lodash: github.com/lodash/lodash/9429a4ee03056e5b7be9a85a54571d7630f05983
       simple: link:simple
       top-10: link:../top-10
 
@@ -161,9 +161,9 @@ packages:
       isexe: 2.0.0
     dev: false
 
-  github.com/lodash/lodash/2da024c3b4f9947a48517639de7560457cd4ec6c:
-    resolution: {tarball: https://codeload.github.com/lodash/lodash/tar.gz/2da024c3b4f9947a48517639de7560457cd4ec6c}
+  github.com/lodash/lodash/9429a4ee03056e5b7be9a85a54571d7630f05983:
+    resolution: {tarball: https://codeload.github.com/lodash/lodash/tar.gz/9429a4ee03056e5b7be9a85a54571d7630f05983}
     name: lodash
-    version: 5.0.0
+    version: 4.18.1
     engines: {node: '>=4.0.0'}
     dev: false
